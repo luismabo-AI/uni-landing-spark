@@ -1,28 +1,41 @@
 import { Card, CardContent } from "./ui/card";
-import { Button } from "./ui/button";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import { useState } from "react";
+import { Quote } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import cruzPortrait from "@/assets/cruz-portrait.jpg";
 
 const TestimonialsSection = () => {
-  const [currentTestimonial, setCurrentTestimonial] = useState(0);
-
   const testimonials = [
     {
       name: "Cruz Galdámez",
-      position: "Director General CED",
+      position: "Director Carrera CED",
       image: cruzPortrait,
-      quote: "Ser un profesional integral en estrategia digital multidisciplinario que integra creatividad, pensamiento crítico y visión innovadora para diseñar, planificar y ejecutar proyectos combinando habilidades en marketing, producción audiovisual y desarrollo de interfaces digitales."
+      quote: "Un profesional integral de CED está en constante evolución digital. Multidisciplinario porque integra creatividad, pensamiento crítico y visión innovadora para diseñar, planificar y ejecutar proyectos. Combina habilidades en marketing, producción audiovisual y desarrollo de interfaces digitales."
+    },
+    {
+      name: "Allison Perla",
+      position: "Graduada CED",
+      image: "/placeholder.svg",
+      quote: "La carrera me convirtió en multifacética porque te capacita a diferentes grados de la industria creativa y del perfil para que te enfoques en el comercio que quieras hacer."
+    },
+    {
+      name: "Ivette Chacón",
+      position: "Docente Mónica Herrera",
+      image: "/placeholder.svg",
+      quote: "Tipo de experto en compañía que desarrolla experiencia con apoyo digital aplicado en marketing, entretenimiento digital y estructura. Una disciplina mezcla de tecnología visual y marketing, aspectos industriales, producción de medios audiovisuales."
+    },
+    {
+      name: "Christian Zayas",
+      position: "Consultor y asesor empresarial",
+      image: "/placeholder.svg",
+      quote: "Profesional multidisciplinario capaz de investigar, diseñar, bien planificar productivo y crear interfaces digitales en marcos de marketing digital, producción audiovisual y comercial local experto."
+    },
+    {
+      name: "Juanjo Argüello",
+      position: "Fundador de NoñCa Studio",
+      image: "/placeholder.svg",
+      quote: "Un profesional de CED es un perfil multidisciplinario con características de pensamiento de diseño estratégico para emprendimiento, servicio y productos de resultados mejores, que desarrolla branding, medios, publicidad y producción audiovisual."
     }
   ];
-
-  const nextTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
 
   return (
     <section id="testimonios" className="py-20 bg-background">
@@ -36,76 +49,53 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <Card className="bg-card-gradient border-border shadow-elegant">
-            <CardContent className="p-8 md:p-12">
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                {/* Profile Image */}
-                <div className="flex-shrink-0">
-                  <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
-                    <img
-                      src={testimonials[currentTestimonial].image}
-                      alt={testimonials[currentTestimonial].name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </div>
+        <div className="max-w-5xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="relative"
+          >
+            <CarouselContent>
+              {testimonials.map((testimonial, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <Card className="h-full bg-card-gradient border-border shadow-elegant">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      {/* Profile Image */}
+                      <div className="flex-shrink-0 mb-6">
+                        <div className="w-20 h-20 rounded-full overflow-hidden border-3 border-primary/20 shadow-glow mx-auto">
+                          <img
+                            src={testimonial.image}
+                            alt={testimonial.name}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                      </div>
 
-                {/* Testimonial Content */}
-                <div className="flex-1 text-center md:text-left">
-                  <Quote className="h-8 w-8 text-accent mb-4 mx-auto md:mx-0" />
-                  <blockquote className="text-lg md:text-xl text-foreground leading-relaxed mb-6">
-                    "{testimonials[currentTestimonial].quote}"
-                  </blockquote>
-                  <div>
-                    <h4 className="text-xl font-bold text-primary">
-                      {testimonials[currentTestimonial].name}
-                    </h4>
-                    <p className="text-muted-foreground font-medium">
-                      {testimonials[currentTestimonial].position}
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Navigation (hidden if only one testimonial) */}
-              {testimonials.length > 1 && (
-                <div className="flex justify-center items-center gap-4 mt-8">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={prevTestimonial}
-                    className="rounded-full border-primary/20 hover:bg-primary hover:text-primary-foreground transition-smooth"
-                  >
-                    <ChevronLeft className="h-5 w-5" />
-                  </Button>
-                  
-                  <div className="flex gap-2">
-                    {testimonials.map((_, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setCurrentTestimonial(index)}
-                        className={`w-3 h-3 rounded-full transition-smooth ${
-                          index === currentTestimonial
-                            ? "bg-primary"
-                            : "bg-border hover:bg-primary/50"
-                        }`}
-                      />
-                    ))}
-                  </div>
-
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    onClick={nextTestimonial}
-                    className="rounded-full border-primary/20 hover:bg-primary hover:text-primary-foreground transition-smooth"
-                  >
-                    <ChevronRight className="h-5 w-5" />
-                  </Button>
-                </div>
-              )}
-            </CardContent>
-          </Card>
+                      {/* Testimonial Content */}
+                      <div className="flex-1 text-center">
+                        <Quote className="h-6 w-6 text-accent mb-4 mx-auto" />
+                        <blockquote className="text-sm md:text-base text-foreground leading-relaxed mb-6 flex-1">
+                          "{testimonial.quote}"
+                        </blockquote>
+                        <div className="mt-auto">
+                          <h4 className="text-lg font-bold text-primary">
+                            {testimonial.name}
+                          </h4>
+                          <p className="text-muted-foreground font-medium text-sm">
+                            {testimonial.position}
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="border-primary/20 hover:bg-primary hover:text-primary-foreground" />
+            <CarouselNext className="border-primary/20 hover:bg-primary hover:text-primary-foreground" />
+          </Carousel>
         </div>
       </div>
     </section>

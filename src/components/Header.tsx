@@ -17,8 +17,8 @@ const Header = () => {
     <header className="fixed top-0 w-full bg-background/95 backdrop-blur-md border-b border-border z-50 shadow-elegant">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center">
-          <div className="w-12 h-8 bg-hero-gradient rounded-lg flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">CED</span>
+          <div className="w-16 h-12 bg-hero-gradient rounded-lg flex items-center justify-center">
+            <span className="text-primary-foreground font-bold text-2xl">CED</span>
           </div>
         </div>
 

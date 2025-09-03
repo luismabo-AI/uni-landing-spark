@@ -73,30 +73,6 @@ const JobMarketSection = () => {
             </Card>
           ))}
         </div>
-
-        {/* Stats */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <Card className="bg-primary text-primary-foreground shadow-glow">
-            <CardContent className="p-6 text-center">
-              <div className="text-3xl font-bold text-accent mb-2">20+</div>
-              <p className="text-primary-foreground/90">Oportunidades Laborales</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-accent text-accent-foreground shadow-glow">
-            <CardContent className="p-6 text-center">
-              <div className="text-3xl font-bold text-primary mb-2">100%</div>
-              <p className="text-accent-foreground/90">Enfoque Multidisciplinario</p>
-            </CardContent>
-          </Card>
-          
-          <Card className="bg-primary text-primary-foreground shadow-glow">
-            <CardContent className="p-6 text-center">
-              <div className="text-3xl font-bold text-accent mb-2">∞</div>
-              <p className="text-primary-foreground/90">Posibilidades de Crecimiento</p>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );

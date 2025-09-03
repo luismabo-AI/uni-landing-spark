@@ -25,7 +25,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
             "ESTRATEGA CREATIVO
             <br />
             <span className="text-accent">MULTIDISCIPLINARIO</span>"

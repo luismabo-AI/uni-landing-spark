@@ -4,10 +4,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center space-x-2 mb-4 md:mb-0">
-            <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
-              <span className="text-accent-foreground font-bold text-sm">C</span>
-            </div>
-            <span className="text-xl font-bold">CED</span>
+            <span className="text-4xl font-bold">CED</span>
           </div>
           
           <div className="text-center md:text-right">

@@ -37,14 +37,12 @@ const AboutSection = () => {
           </p>
           <div className="mt-8 text-left max-w-2xl mx-auto space-y-4">
             <p className="text-foreground leading-relaxed">
-              Un profesional de CED es un estratega digital multidisciplinario que integra creatividad, 
-              pensamiento crítico y visión innovadora para diseñar, planificar y ejecutar proyectos, 
-              combinando habilidades comunicativas con conocimiento en el desarrollo de interfaces digitales.
+            Un profesional de CED es un estratega digital multidisciplinario que integra creatividad, pensamiento crítico y visión innovadora para diseñar, planificar y ejecutar proyectos, combinando habilidades en marketing, producción audiovisual y desarrollo de interfaces digitales.
+
+
             </p>
             <p className="text-foreground leading-relaxed">
-              Desde especializarse en una disciplina hasta liderar equipos estratégicamente o emprender 
-              de forma independiente, siempre respondiendo a las necesidades del mercado y del usuario 
-              en entornos digitales.
+            Puede especializarse en un área técnica, liderar equipos estratégicamente o emprender de forma independiente, siempre respondiendo a las necesidades del mercado y del usuario en entornos digitales.
             </p>
           </div>
         </div>

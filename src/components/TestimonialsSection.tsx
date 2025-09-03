@@ -53,12 +53,19 @@ const TestimonialsSection = () => {
             opts={{
               align: "start",
               loop: true,
+              dragFree: true,
+              containScroll: "trimSnaps",
+              breakpoints: {
+                "(min-width: 768px)": { 
+                  dragFree: false,
+                },
+              },
             }}
             className="relative"
           >
-            <CarouselContent>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-4/5 sm:basis-3/5 md:basis-1/2 lg:basis-1/3">
                   <Card className="h-full bg-card-gradient border-border shadow-elegant">
                     <CardContent className="p-6 flex flex-col h-full">
                       {/* Profile Image */}
@@ -92,8 +99,8 @@ const TestimonialsSection = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="border-primary/20 hover:bg-primary hover:text-primary-foreground" />
-            <CarouselNext className="border-primary/20 hover:bg-primary hover:text-primary-foreground" />
+            <CarouselPrevious className="hidden sm:flex border-primary/20 hover:bg-primary hover:text-primary-foreground -left-4 md:-left-12" />
+            <CarouselNext className="hidden sm:flex border-primary/20 hover:bg-primary hover:text-primary-foreground -right-4 md:-right-12" />
           </Carousel>
         </div>
       </div>

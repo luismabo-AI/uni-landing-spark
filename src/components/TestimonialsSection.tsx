@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
     {
       name: "Allison Perla",
       position: "Graduada CED",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/71ca0277-e110-45c7-bdb3-edfbb429fbb7.png",
       quote: "La carrera me convirtió en multifacética porque te capacita a diferentes grados de la industria creativa y del perfil para que te enfoques en el comercio que quieras hacer."
     },
     {

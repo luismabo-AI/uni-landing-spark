@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
     {
       name: "Christian Zayas",
       position: "Consultor y asesor empresarial",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/a9b35068-543f-4774-884d-5a1daa651ac9.png",
       quote: "Profesional multidisciplinario capaz de investigar, diseñar, bien planificar productivo y crear interfaces digitales en marcos de marketing digital, producción audiovisual y comercial local experto."
     },
     {

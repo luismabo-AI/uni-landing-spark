@@ -6,8 +6,8 @@ const JobMarketSection = () => {
     {
       icon: <Monitor className="h-6 w-6 text-primary" />,
       jobs: [
-        "Content Marketing",
-        "UX Research", 
+        "Content Marketer",
+        "UX Researcher", 
         "UI Designer",
         "Scrum Master",
         "Product Owner"
@@ -16,7 +16,7 @@ const JobMarketSection = () => {
     {
       icon: <TrendingUp className="h-6 w-6 text-primary" />,
       jobs: [
-        "Growth Hacking",
+        "Growth Hacker",
         "Estratega Digital",
         "Fotógrafo",
         "Project Manager",
@@ -26,7 +26,7 @@ const JobMarketSection = () => {
     {
       icon: <MessageSquare className="h-6 w-6 text-primary" />,
       jobs: [
-        "Producer audiovisual",
+        "Productor Audiovisual",
         "Consultor de Estrategias",
         "Social Media Manager",
         "Freelancer",
@@ -36,7 +36,8 @@ const JobMarketSection = () => {
     {
       icon: <Globe className="h-6 w-6 text-primary" />,
       jobs: [
-        "Coordinador Digital"
+        "Coordinador Digital",
+        "Emprendedor",
       ]
     }
   ];

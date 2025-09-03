@@ -15,7 +15,7 @@ const Footer = () => {
               © {new Date().getFullYear()} Comunicación y Estrategia Digital
             </p>
             <p className="text-primary-foreground/60 text-xs mt-1">
-              Formando estrategas digitales del futuro
+              Diseñado por Luis, Daniela y Emilio
             </p>
           </div>
         </div>

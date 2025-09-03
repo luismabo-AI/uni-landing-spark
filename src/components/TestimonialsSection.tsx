@@ -1,6 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Quote } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const TestimonialsSection = () => {
   const testimonials = [
@@ -61,6 +62,13 @@ const TestimonialsSection = () => {
                 },
               },
             }}
+            plugins={[
+              Autoplay({
+                delay: 4000,
+                stopOnInteraction: false,
+                stopOnMouseEnter: true,
+              }),
+            ]}
             className="relative"
           >
             <CarouselContent className="-ml-2 lg:-ml-4">

@@ -12,7 +12,7 @@ const Footer = () => {
           
           <div className="text-center md:text-right">
             <p className="text-primary-foreground/80 text-sm">
-              © 2024 Comunicación y Estrategia Digital
+              © {new Date().getFullYear()} Comunicación y Estrategia Digital
             </p>
             <p className="text-primary-foreground/60 text-xs mt-1">
               Formando estrategas digitales del futuro

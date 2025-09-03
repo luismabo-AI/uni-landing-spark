@@ -1,14 +1,13 @@
 import { Card, CardContent } from "./ui/card";
 import { Quote } from "lucide-react";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
-import cruzPortrait from "@/assets/cruz-portrait.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       name: "Cruz Galdámez",
       position: "Director Carrera CED",
-      image: cruzPortrait,
+      image: "/lovable-uploads/45a567d0-0f79-439b-8279-ce3811b1b2c6.png",
       quote: "Un profesional integral de CED está en constante evolución digital. Multidisciplinario porque integra creatividad, pensamiento crítico y visión innovadora para diseñar, planificar y ejecutar proyectos. Combina habilidades en marketing, producción audiovisual y desarrollo de interfaces digitales."
     },
     {

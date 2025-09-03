@@ -24,7 +24,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <h1 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-6 leading-tight">
             "ESTRATEGA CREATIVO
             <br />
@@ -38,16 +38,15 @@ const HeroSection = () => {
           <Button
             onClick={() => scrollToSection("que-es-ced")}
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-4 text-lg shadow-glow transition-bounce"
           >
             Conoce más sobre CED
           </Button>
+          {/* Scroll indicator */}
+          <div className="flex justify-center text-center mt-10">
+            <ChevronDown className="h-8 w-8 text-primary-foreground/60 animate-bounce" />
+          </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-8 w-8 text-primary-foreground/60" />
-        </div>
       </div>
     </section>
   );

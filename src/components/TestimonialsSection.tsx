@@ -31,7 +31,7 @@ const TestimonialsSection = () => {
     {
       name: "Juanjo Argüello",
       position: "Fundador de NoñCa Studio",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/103ed277-f10f-4648-9060-03431d04876a.png",
       quote: "Un profesional de CED es un perfil multidisciplinario con características de pensamiento de diseño estratégico para emprendimiento, servicio y productos de resultados mejores, que desarrolla branding, medios, publicidad y producción audiovisual."
     }
   ];

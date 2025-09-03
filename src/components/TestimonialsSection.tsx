@@ -19,7 +19,7 @@ const TestimonialsSection = () => {
     {
       name: "Ivette Chacón",
       position: "Docente Mónica Herrera",
-      image: "/placeholder.svg",
+      image: "/lovable-uploads/f7b89276-7850-4925-8c51-bcb0607dca88.png",
       quote: "Tipo de experto en compañía que desarrolla experiencia con apoyo digital aplicado en marketing, entretenimiento digital y estructura. Una disciplina mezcla de tecnología visual y marketing, aspectos industriales, producción de medios audiovisuales."
     },
     {
